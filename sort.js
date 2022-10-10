@@ -37,3 +37,24 @@ function bubblesort(arr) {
 const arr = [8, 23, 45, 6, 7]
 bubblesort(arr)
 console.log(arr)
+
+
+function getSecondLargest(nums) {
+    // Complete the function
+    for (let i = 0; i < nums.length; i++) {
+        for (let i = 0; i < nums.length - 1; i++)
+            if (nums[i] > nums[i + 1]) {
+                let temp = nums[i];
+                nums[i] = nums[i + 1];
+                nums[i + 1] = temp;
+            }
+    }
+    let noduplicates = [];
+    for (let i = 0; i < nums.length; i++) {
+
+        if (!noduplicates.includes(nums[i]))
+            noduplicates.push(nums[i]);
+    }
+    return noduplicates[noduplicates.length - 2]
+}
+console.log(getSecondLargest([8, 23, 45, 6, 7, 45]))

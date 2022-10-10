@@ -1,15 +1,15 @@
-// function reverseString(s) {
+function reverseString(s) {
 
-//     let message = "s.split is not a function";
+    let message = "s.split is not a function";
 		
-//     try {
-//         console.log(s.split("").reverse().join(""));
-//     } catch(e){
-//         console.log(e.message);
-//         console.log(s);
-//     }
-// }
-// console.log(reverseString("tegnapelott"))
+    try {
+        console.log(s.split("").reverse().join(""));
+    } catch(e){
+        console.log(e.message);
+        console.log(s);
+    }
+}
+console.log(reverseString("tegnapelott"))
 
 function reverseString2(string) {
     let reversedString='';
