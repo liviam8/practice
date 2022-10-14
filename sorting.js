@@ -1,15 +1,12 @@
-function insertionSort1(arr) {
-    // Write your code here
-for (let i=0; i<arr.length; i++) {
-    for (let j=0; j<arr.length-1; j++) {
-        if (arr[j]> arr[j+1]) {
-            let current=arr[j+1];
-            arr[j+1]=arr[j];
-            arr[j]=current;
-        }
-    }
+function sort (array) {
+    for(let i=0; i<array.length; i++) {
+        for (let j=i+1; j<array.length; j++) 
+            if (array[i]>array[j]) {
+                let temp=array[i];
+                array[i]=array[j];
+                array[j]=temp;
+            }
+        
+    } return array;
 }
-
-return arr;
-}
-console.log(insertionSort1([2,4,6,8,3]))
+console.log(sort([1,4,1,2,8,3,6]));
