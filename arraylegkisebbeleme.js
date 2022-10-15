@@ -2,21 +2,14 @@
 //Array legkisebb eleme: 
 
 function smallest(array) {
-  for (let j = 0; j < array.length - 1; j++) {
-    //itt kívülre kell a array.length-1, mert visszafelé megyünk
-    for (let i = 0; i < array.length; i++) {
-      if (array[i] > array[i - 1]) {
-        let current = array[i - 1];
-        array[i - 1] = array[i];
-        array[i] = current;
+ 
+  for (let i=0; i<array.length; i++) {
+    for (let j=i+1; j<array.length; j++) {
+      if(array[i]>array[j]) {
+        let temp=array[i];
+        array[i]=array[j];
+        array[j]=temp;
       }
-    }
-  }
-  console.log(array); //array csökkenő sorrendben
-  return array[array.length - 1];
-};
-
-console.log(
-  'legkisebb szám [6,1,8,4,3,5]-ből: ' +
-    smallest([6, 1, 8, 4, 3, 5])
-);
+    }return array[0];
+  } 
+} console.log(smallest([5,3,6,7]))
