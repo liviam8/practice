@@ -2,14 +2,14 @@
 //   `["Arthur", "Boe", "Chloe"]`
 // -  Swap the first and the third element of `names`
 
-function swapElements (names) {
+function swapElements (array) {
     let temp="";
+    temp=array[0];
+    array[0]=array[array.length - 1];
+    array[array.length - 1]=temp;
 
-    temp=names[0];
-    names[0]=names[2];
-    names[2]=temp;
-    console.log(names)
+    return array;
 
 } 
 
-console.log(swapElements["Arthur", "Boe", "Chloe"]);
+console.log(swapElements(["Arthur", "Boe", "Chloe"]));

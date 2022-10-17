@@ -4,8 +4,10 @@
 
 function sumElements (numbers) {
     let sum=0;
-    for (let i=0; i<numbers.length; i++) {
-        sum=sum+numbers[i];
-    } return sum;
+     for (let i=0; i<numbers.length; i++) {
+        sum=numbers[1]+numbers[2];
+         } return sum;
+        //  numbers.map((e,i) => sum = e[1]+e[2]);
+
 }
 console.log(sumElements([54, 23, 66, 12]));

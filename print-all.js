@@ -4,9 +4,11 @@
 // -  bonus for using the correct built in array method
 
 function printAll (numbers) {
-    for (let i=0; i<numbers.length; i++) {
-        console.log(numbers[i]);
-    } 
+    // for (let i=0; i<numbers.length; i++) {
+    //     console.log(numbers[i]);
+    // } 
+    numbers.map((e,i) => (console.log(e[i])));
+
 } 
 
 printAll([4,5,6,7]);
