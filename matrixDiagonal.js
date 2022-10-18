@@ -14,17 +14,16 @@
 
 
 
-let matrix = [];
-let size = 4;
-for (let i = 0; i < size; i++) {
-    let innerArr = [];
-    for (let j = 0; j < size; j++) {
-        if (j === i) {
-            innerArr[j] = 1;
-        } else {
-            innerArr[j] = 0;
-        }
-    }
-    matrix[i] = innerArr;
-    console.log(matrix[i])
+let matrix=[];
+let size=4;
+for (let i=0; i<size; i++) {
+    //let innerArray=[]
+    let str =""
+    for (let j=0; j<size; j++) 
+    if (i===j) {
+        str+="*";
+    } else str+=" ";
+//    console.log(matrix[i]);
 }
+
+console.log(str);
