@@ -5,6 +5,6 @@ function countLetters (string) {
     for (let i=0; i<string.length; i++) {
         count++;
     }
-    return count
+    return count;
 }
 console.log(countLetters("string"))
